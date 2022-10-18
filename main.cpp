@@ -14,6 +14,7 @@ GLfloat back_amb_diff[]= {0.4,0.7,0.1,1.0};
 GLfloat spe[]= {0.25,0.25,0.25,1.0};
 GLfloat theta=0,alpha=0, dt=0.5;
 
+
 //body roket
 void rocket_body(){
     glPushMatrix ();
@@ -27,7 +28,7 @@ void rocket_body(){
     glRotated(-90, 1, 0, 0);
     gluCylinder(rocketBody, 4.5, 4.5, 30, 32, 32);
 
-    // gambar roket
+    // gambar jendela roket
     glColor3f(0, 0, 0);//warna jendela
     int windows[5]={-5, -10,-15, -20,-25};     // arah jendela
     for(int i=0; i<5; i++){
