@@ -23,7 +23,7 @@ void rocket_body(){
     gluQuadricNormals(rocketBody, GLU_SMOOTH);
     gluQuadricOrientation(rocketBody, GLU_OUTSIDE);
 
-    glColor3f(0.694, 0.694, 0.686);// warna body
+    glColor3f(0, 1, 1);// warna body
     glTranslated(7.5, -18, z_viewPoint);
     glRotated(-90, 1, 0, 0);
     gluCylinder(rocketBody, 4.5, 4.5, 30, 32, 32);

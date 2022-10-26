@@ -209,7 +209,7 @@
 1301111156 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
 	<objfwd.h>
 
-976638172 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+1666149059 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -219,4 +219,10 @@
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
 	<stddef.h>
 	<GL/gl.h>
+
+1666763456 source:c:\users\acer\documents\tugas_rocket_3d\main.cpp
+	<iostream>
+	<windows.h>
+	<GL/glut.h>
+	<GL/glu.h>
 
