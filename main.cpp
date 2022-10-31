@@ -23,7 +23,7 @@ void rocket_body(){
     gluQuadricNormals(rocketBody, GLU_SMOOTH);
     gluQuadricOrientation(rocketBody, GLU_OUTSIDE);
 
-    glColor3f(0, 1, 1);// warna body
+    glColor3f(1, 1, 1);// warna body
     glTranslated(7.5, -18, z_viewPoint);
     glRotated(-90, 1, 0, 0);
     gluCylinder(rocketBody, 4.5, 4.5, 30, 32, 32);
@@ -175,10 +175,10 @@ void display(void){
 
     glPushMatrix();
     glTranslated(5, 10, z_dis - 300);
-    stars();
+    stars(); //hapus bintang
 
     glPopMatrix();
-    z_dis+=0.8;
+    z_dis+=0.8;//gerakan bintang
 
     if(theta>359 && theta < 360)  //reset rotasi
     {
@@ -200,13 +200,13 @@ void display(void){
     else{
         glPushMatrix();
         glTranslated(6.5, 0, z_viewPoint);
-        glRotated(-50, 1, 0, 0);
+        glRotated(-50, 1, 0, 0);// kasi berdiri
         glTranslated(-6.7,0,z_viewPoint*(-1));
 
         glPushMatrix();
         glTranslated(6.5, 0, z_viewPoint);
-        glRotated(alpha, 0, 1, 0);
-        alpha = alpha+2;
+        glRotated(alpha, 0, 1, 0);//stop putaran roket
+        alpha = alpha+1.5;//kasih lambat putaran
         glTranslated(-6.5, 0, z_viewPoint*(-1));
         rocket_assembly();
         if(z_dis > 3000)
@@ -255,7 +255,7 @@ int main(int argc, char **argv){
 
 
     glutDisplayFunc(display);
-    glutIdleFunc(idle); //jadikan komentar / hapus fungsi ini supaya diam
+    glutIdleFunc(idle); //jadikan komentar / hapus fungsi ini supaya diam semuanya
 
 
     glutMainLoop();
