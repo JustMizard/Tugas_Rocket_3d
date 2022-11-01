@@ -232,7 +232,7 @@ int main(int argc, char **argv){
     glutInitWindowSize(800, 600);
     glutInitWindowPosition(200, 100);
     glutCreateWindow("roket");
-    glClearColor(0, 0, 0, 1);       //warna jendela
+    glClearColor(0, 0, 0, 1);       //warna latar belakang
     glEnable(GL_DEPTH_TEST);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
